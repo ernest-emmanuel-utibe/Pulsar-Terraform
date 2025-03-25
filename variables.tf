@@ -1,15 +1,12 @@
-# variable "aws_region" {
-#   description = "AWS region"
-#   default     = "us-west-2"
-# }
-variable "region" {
+# variables.tf
+variable "aws_region" {
   description = "AWS region"
   type        = string
   default     = "us-west-2"
 }
 
-variable "cluster_name" {
-  description = "Name of the EKS cluster"
+variable "pulsar_version" {
+  description = "Apache Pulsar Helm chart version"
   type        = string
-  default     = "pulsar-eks"
+  default     = "3.0.0"
 }
